@@ -13,7 +13,7 @@ Currently CC data is not stored, as a CC processor is needed to handle CC securi
 # Design Decisions
 ## Schema
 
-![schema_picture][schema/schema.png]
+![schema_picture](schema/schema.png)
 
 There is no User model, but it could be implemented for repeat users to see which movies they've been.
 
