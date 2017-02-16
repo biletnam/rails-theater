@@ -13,7 +13,7 @@ Currently CC data is not stored, as a CC processor is needed to handle CC securi
 # Design Decisions
 ## Schema
 
-![schema_picture][https://github.com/khjs534/rails-theater/blob/master/schema/Screen%20Shot%202017-02-16%20at%2012.40.41%20PM.png]
+![schema_picture][https://github.com/khjs534/rails-theater/blob/master/schema/Screen%20Shot%202017-02-16%20at%2012.40.41%20PM.png "SchemaPicture"]
 
 There is no User model, but it could be implemented for repeat users to see which movies they've been.
 
