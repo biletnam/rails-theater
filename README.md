@@ -15,8 +15,19 @@ Currently CC data is not stored, as a CC processor is needed to handle CC securi
 
 ![schema_picture](schema/schema.png)
 
-There is no User model, but it could be implemented for repeat users to see which movies they've been.
+Users will find a showing that they want to see, enter their information and receive an email confirmation that their order was received. The prompt asked that users only enter their name, email, and CC information at checkout to receive their ticket and email confirmation.
 
+There is no User model, but it could be implemented in the future for users to see which movies they've been to or other information as well as improve the user experience by allowing them not to repeatedly enter their name and email.
+
+By creating a theater model that has many auditoriums it allows for the theater company to scale up the website to multiple locations and continue to use the same web application.
+
+Auditorium model are created for each auditorium and have a maximum seating capacity.
+
+Movie is a model that is used to identify which movie has played at theater. Movies can be played in multiple auditoriums at the same theater so there is a join table called showings.
+
+Showings is a showing of a movie in a specific auditorium and at a specific time. Available seats is calculated by checking the maximum seating capacity of the auditorium it is in and subtracting the amount of sales that have been made for that showing.
+
+Sales are used to see available seating and for sales data that management might want to see.
 
 ## Security
 Admin logins need a protected password. I chose to use ActiveModel's has_secure_password because it is built into rails and there will probably be not many additional admin accounts to be created.
