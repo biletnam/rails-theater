@@ -13,7 +13,7 @@ Currently CC data is not stored, as a CC processor is needed to handle CC securi
 # Design Decisions
 ## Schema
 
-![schema_picture](schema/schema.png)
+![schema_picture](readme_assets/schema.png)
 
 Users will find a showing that they want to see, enter their information and receive an email confirmation that their order was received. The prompt asked that users only enter their name, email, and CC information at checkout to receive their ticket and email confirmation.
 
@@ -33,8 +33,6 @@ Sales are used to see available seating and for sales data that management might
 Admin logins need a protected password. I chose to use ActiveModel's has_secure_password because it is built into rails and there will probably be not many additional admin accounts to be created.
 
 If a User model were to be created I would use devise to more adequately protect users and their passwords in the database.
-
-## TDD
 
 
 # Future Improvements
