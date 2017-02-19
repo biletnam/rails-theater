@@ -29,6 +29,8 @@ Showings is a showing of a movie in a specific auditorium and at a specific time
 
 Sales are used to see available seating and for sales data that management might want to see.
 
+Admins are people who would be maintaining the site and adjusting relations between showings, movies, and auditoriums.
+
 ## Security
 Admin logins need a protected password. I chose to use ActiveModel's has_secure_password because it is built into rails and there will probably be not many additional admin accounts to be created.
 
