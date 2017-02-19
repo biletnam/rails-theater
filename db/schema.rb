@@ -46,11 +46,10 @@ ActiveRecord::Schema.define(version: 20170218182428) do
 
   create_table "showings", force: :cascade do |t|
     t.datetime "time"
-    t.integer  "available_seats"
     t.integer  "movie_id"
     t.integer  "auditorium_id"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
     t.index ["auditorium_id"], name: "index_showings_on_auditorium_id"
     t.index ["movie_id"], name: "index_showings_on_movie_id"
   end

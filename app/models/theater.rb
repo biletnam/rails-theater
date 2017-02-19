@@ -1,3 +1,3 @@
 class Theater < ApplicationRecord
-  has_many :auditoriums
+  has_many :auditoria
 end
