@@ -13,7 +13,7 @@ Currently CC data is not stored, as a CC processor is needed to handle CC securi
 # Design Decisions
 ## Schema
 
-![schema_picture](readme_assets/schema.png)
+![schema_picture](readme_assets/schema3.png)
 
 Users will find a showing that they want to see, enter their information and receive an email confirmation that their order was received. The prompt asked that users only enter their name, email, and CC information at checkout to receive their ticket and email confirmation.
 
@@ -25,7 +25,7 @@ Auditorium model are created for each auditorium and have a maximum seating capa
 
 Movie is a model that is used to identify which movie has played at theater. Movies can be played in multiple auditoriums at the same theater so there is a join table called showings.
 
-Showings is a showing of a movie in a specific auditorium and at a specific time. Available seats is calculated by checking the maximum seating capacity of the auditorium it is in and subtracting the amount of sales that have been made for that showing.
+Showings is a showing of a movie in a specific auditorium and at a specific time. Available seats is a virtual attribute calculated by checking the maximum seating capacity of the auditorium it is in and subtracting the amount of sales that have been made for that showing.
 
 Sales are used to see available seating and for sales data that management might want to see.
 
