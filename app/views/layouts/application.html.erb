@@ -9,6 +9,23 @@
   </head>
 
   <body>
+    <h1>Welcome to Rails Theater</h1>
+
+     <div>
+      <% if logged_in? %>
+        <nav>
+          <%= link_to 'Home', root_path %>
+          <%= link_to 'Logout', logout_path , method: "delete"  %>
+          <%= link_to 'Theaters, theaters_path' %>
+        </nav>
+      <% else %>
+        <nav>
+          <%= link_to 'Home', root_path %>
+          <%= link_to 'Login', new_session_path %>
+          <%= link_to 'Theaters', theaters_path %>
+        </nav>
+      <% end %>
+    </div>
     <%= yield %>
   </body>
 </html>
