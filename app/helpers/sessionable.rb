@@ -5,6 +5,6 @@ module Sessionable
   end
 
   def current_user
-    @current_user ||= User.find(session[:user_id]) if logged_in?
+    @current_user ||= Admin.find(session[:admin_id]) if logged_in?
   end
 end
